@@ -36,9 +36,11 @@
         ::-webkit-scrollbar {
             width: 10px;
         }
+
         ::-webkit-scrollbar-track {
             background: var(--bg-color);
         }
+
         ::-webkit-scrollbar-thumb {
             background: var(--primary);
             border-radius: 5px;
@@ -84,19 +86,19 @@
             list-style: none;
         }
 
-        .nav-links a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+            .nav-links a {
+                color: var(--text-main);
+                text-decoration: none;
+                font-size: 0.9rem;
+                transition: color 0.3s;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
 
-        .nav-links a:hover {
-            color: var(--primary);
-            text-shadow: 0 0 10px var(--primary);
-        }
+                .nav-links a:hover {
+                    color: var(--primary);
+                    text-shadow: 0 0 10px var(--primary);
+                }
 
         /* --- HERO SECTION --- */
         .hero {
@@ -109,22 +111,22 @@
             position: relative;
         }
 
-        .hero h1 {
-            font-size: 4rem;
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
+            .hero h1 {
+                font-size: 4rem;
+                line-height: 1.1;
+                margin-bottom: 20px;
+            }
 
-        .hero h1 span {
-            color: var(--primary);
-        }
+                .hero h1 span {
+                    color: var(--primary);
+                }
 
-        .hero h2 {
-            font-size: 2rem;
-            color: var(--text-muted);
-            margin-bottom: 30px;
-            font-family: var(--font-mono);
-        }
+            .hero h2 {
+                font-size: 2rem;
+                color: var(--text-muted);
+                margin-bottom: 30px;
+                font-family: var(--font-mono);
+            }
 
         .typewriter::after {
             content: '|';
@@ -144,11 +146,11 @@
             border-radius: 4px;
         }
 
-        .cta-btn:hover {
-            background: var(--primary);
-            color: #000;
-            box-shadow: 0 0 20px var(--primary);
-        }
+            .cta-btn:hover {
+                background: var(--primary);
+                color: #000;
+                box-shadow: 0 0 20px var(--primary);
+            }
 
         /* --- SECTIONS GENERAL --- */
         section {
@@ -181,11 +183,11 @@
             transition: transform 0.3s, border-color 0.3s;
         }
 
-        .skill-item:hover {
-            transform: translateY(-5px);
-            border-color: var(--secondary);
-            box-shadow: 0 5px 15px rgba(0, 184, 255, 0.2);
-        }
+            .skill-item:hover {
+                transform: translateY(-5px);
+                border-color: var(--secondary);
+                box-shadow: 0 5px 15px rgba(0, 184, 255, 0.2);
+            }
 
         /* --- PROJECTS --- */
         .projects-container {
@@ -207,11 +209,11 @@
             justify-content: space-between;
         }
 
-        .project-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--primary);
-            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
-        }
+            .project-card:hover {
+                transform: translateY(-10px);
+                border-color: var(--primary);
+                box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+            }
 
         .project-title {
             font-size: 1.5rem;
@@ -242,11 +244,11 @@
             margin-top: auto;
         }
 
-        .project-link:hover {
-            color: var(--primary);
-        }
+            .project-link:hover {
+                color: var(--primary);
+            }
 
-        /* --- EDUCATION & TIMELINE --- */
+        /* --- TIMELINE (EXPERIENCE & EDUCATION) --- */
         .timeline {
             position: relative;
             max-width: 800px;
@@ -259,17 +261,17 @@
             position: relative;
         }
 
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -6px;
-            top: 0;
-            width: 10px;
-            height: 10px;
-            background: var(--bg-color);
-            border: 2px solid var(--secondary);
-            border-radius: 50%;
-        }
+            .timeline-item::before {
+                content: '';
+                position: absolute;
+                left: -6px;
+                top: 0;
+                width: 10px;
+                height: 10px;
+                background: var(--bg-color);
+                border: 2px solid var(--secondary);
+                border-radius: 50%;
+            }
 
         .timeline-date {
             font-family: var(--font-mono);
@@ -313,10 +315,10 @@
             transition: 0.3s;
         }
 
-        .contact-btn:hover {
-            background: var(--primary);
-            color: #000;
-        }
+            .contact-btn:hover {
+                background: var(--primary);
+                color: #000;
+            }
 
         /* --- FOOTER --- */
         footer {
@@ -330,7 +332,9 @@
 
         /* --- ANIMATIONS --- */
         @keyframes blink {
-            50% { opacity: 0; }
+            50% {
+                opacity: 0;
+            }
         }
 
         .hidden {
@@ -346,10 +350,22 @@
 
         /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .hero h2 { font-size: 1.2rem; }
-            nav { padding: 20px; }
-            .nav-links { display: none; } /* Simplified for demo */
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+
+            nav {
+                padding: 20px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+            /* Simplified for demo */
         }
     </style>
 </head>
@@ -362,6 +378,7 @@
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -373,18 +390,18 @@
         <h1>Muhammad Zia Danka.</h1>
         <h2>I build <span class="typewriter" id="typewriter"></span></h2>
         <p style="max-width: 500px; color: var(--text-muted); margin-top: 20px; margin-bottom: 40px;">
-            Final year Software Engineering student at Sunway University. I specialize in backend logic, mobile apps, and full-stack web development.
+            Software Engineering graduate proficient in Python, Java, and web development. I specialize in building reliable backend systems, engaging mobile apps, and scalable web solutions.
         </p>
-        <a href="#projects" class="cta-btn">Check out my work</a>
+        <a href="#experience" class="cta-btn">Check out my work</a>
     </section>
 
     <section id="about" class="hidden">
         <h2 class="section-title">01. About Me</h2>
         <div style="background: var(--card-bg); padding: 30px; border-radius: 12px; border-left: 4px solid var(--primary);">
             <p>
-                I am a final year <strong>Bachelor of Software Engineering (Honours)</strong> student at Sunway University, actively seeking a January 2026 software engineering internship.
+                I am a <strong>Software Engineering graduate</strong> actively seeking a full-time developer role.
                 <br><br>
-                My technical journey involves deep dives into <strong>Python, Java, and Scala</strong>. I love solving complex problems, whether it's optimizing algorithm logic or building robust Android applications with Firebase integrations. I am eager to contribute to backend or full-stack teams.
+                My technical journey involves deep dives into <strong>Python, Java, and web development</strong>. I love solving complex problems, whether it's optimizing backend logic, building robust Android applications, or creating modern responsive websites. I am eager to launch a career in backend or full-stack engineering by contributing reliable code and creative problem-solving skills to a technical team.
             </p>
         </div>
     </section>
@@ -392,30 +409,46 @@
     <section id="skills" class="hidden">
         <h2 class="section-title">02. Technical Skills</h2>
         <div class="skills-grid">
-            <div class="skill-item">MERN Stack</div>
-            <div class="skill-item">Python</div>
+            <div class="skill-item">React / Next.js</div>
+            <div class="skill-item">Python / FastAPI</div>
             <div class="skill-item">Java</div>
             <div class="skill-item">Scala</div>
             <div class="skill-item">Android SDK</div>
             <div class="skill-item">Firebase</div>
             <div class="skill-item">Node.js</div>
-            <div class="skill-item">HTML/CSS</div>
+            <div class="skill-item">HTML / CSS / JS</div>
             <div class="skill-item">SQL / MongoDB</div>
-            <div class="skill-item">REST APIs</div>
+            <div class="skill-item">Docker</div>
+        </div>
+    </section>
+
+    <section id="experience" class="hidden">
+        <h2 class="section-title">03. Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">Internship</div>
+                <h3 class="timeline-title">Software Engineering Intern</h3>
+                <p class="timeline-org">Ordenaire by AAB Commerce LLC</p>
+                <ul style="margin-top: 15px; padding-left: 20px; color: var(--text-muted); font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;">Translated high-fidelity <strong>Figma</strong> prototypes into fully functional, interactive web pages using <strong>React.js</strong>, ensuring the final product matched the design pixel-for-pixel.</li>
+                    <li style="margin-bottom: 8px;">Developed reusable UI components to speed up future development and maintain a consistent look and feel across the application.</li>
+                    <li>Collaborated closely with the design team to refine user interfaces, ensuring all pages were responsive and worked smoothly on different screen sizes.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="projects" class="hidden">
-        <h2 class="section-title">03. Featured Projects</h2>
+        <h2 class="section-title">04. Featured Projects</h2>
         <div class="projects-container">
-            
-            <!-- Project 1 -->
+
+            <!-- Project 1: Roguelike Game -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">Roguelike Game</h3>
-                    <p class="project-tech">Scala | OOP | AI</p>
+                    <p class="project-tech">Scala | Game Design</p>
                     <p class="project-desc">
-                        A tile-based game featuring inventory systems, difficulty progression, and enemy AI. Implemented using Scala OOP traits and a lightweight ECS pattern. Reduced duplicate logic by ~35% via refactoring.
+                        Developed an interactive 2D adventure game featuring player movement, hidden items, and automated enemies. Designed a system where the game gets progressively harder, optimizing the underlying code to be 35% more efficient.
                     </p>
                 </div>
                 <a href="https://github.com/sunwaydcis/final-project-9tyNight" target="_blank" class="project-link">
@@ -423,13 +456,13 @@
                 </a>
             </div>
 
-            <!-- Project 2 -->
+            <!-- Project 2: GeoQuiz App -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">GeoQuiz App</h3>
                     <p class="project-tech">Android | Firebase | Java</p>
                     <p class="project-desc">
-                        A quiz app with tiered difficulty and persistent user sessions via Firebase Auth/Firestore. Achieved 95+ Lighthouse PWA score and survived 200+ test sessions with zero crashes.
+                        Built a mobile trivia application with secure user login and high score saving capabilities. Created a responsive layout that provides immediate visual feedback for correct and incorrect answers, keeping the game engaging.
                     </p>
                 </div>
                 <a href="https://github.com/9tyNight/GeoQuiz.git" target="_blank" class="project-link">
@@ -437,13 +470,13 @@
                 </a>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project 3: Ecommerce Website -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">Ecommerce Website</h3>
-                    <p class="project-tech">HTML | CSS | JS</p>
+                    <p class="project-tech">HTML | CSS | JavaScript</p>
                     <p class="project-desc">
-                        Responsive storefront with login, product filtering, and form validation. Optimized for speed with a first-paint under 1.2s and a 95+ mobile performance score.
+                        Created a fully functional and visually appealing online store layout where users can create accounts, filter through products, and use contact forms. Ensured the website automatically adapted to look great on desktop and mobile screens.
                     </p>
                 </div>
                 <a href="https://github.com/9tyNight/Ecommerce-Website.git" target="_blank" class="project-link">
@@ -451,16 +484,58 @@
                 </a>
             </div>
 
-            <!-- Project 4 -->
+            <!-- Project 4: Reservation System -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">Reservation System</h3>
-                    <p class="project-tech">Python | CLI</p>
+                    <p class="project-tech">Python | Team Collaboration</p>
                     <p class="project-desc">
-                        Designed reservation CRUD workflows with robust error handling. Improved unit test pass rate from 72% to 96% after refactoring validation logic.
+                        Collaborated in a 3-person team to build a complete booking system allowing users to easily create, view, update, and cancel reservations. Designed an easy-to-use text menu and improved system reliability by writing tests to catch and prevent user errors.
                     </p>
                 </div>
                 <a href="https://github.com/9tyNight/Reservation.git" target="_blank" class="project-link">
+                    <span>&#128279; View on GitHub</span>
+                </a>
+            </div>
+
+            <!-- Project 5: Admin Dashboard -->
+            <div class="project-card">
+                <div>
+                    <h3 class="project-title">Admin Dashboard</h3>
+                    <p class="project-tech">React | JavaScript | Figma</p>
+                    <p class="project-desc">
+                        Transformed a static design file (Figma) into a fully functional, interactive website using React. Built the user interface with high attention to detail, ensuring the live website matched the original professional design layout pixel-for-pixel.
+                    </p>
+                </div>
+                <a href="https://github.com/9tyNight/dashboard" target="_blank" class="project-link">
+                    <span>&#128279; View on GitHub</span>
+                </a>
+            </div>
+
+            <!-- Project 6: SimpleStock -->
+            <div class="project-card">
+                <div>
+                    <h3 class="project-title">SimpleStock Inventory</h3>
+                    <p class="project-tech">MERN Stack | Inventory Management</p>
+                    <p class="project-desc">
+                        Built a digital inventory tool that helps users organize products, track stock quantities, and manage orders efficiently. Integrated QR and barcode scanning capabilities to instantly identify items and update stock without manual typing.
+                    </p>
+                </div>
+                <a href="https://github.com/9tyNight/SimpleStock" target="_blank" class="project-link">
+                    <span>&#128279; View on GitHub</span>
+                </a>
+            </div>
+
+            <!-- Project 7: Simple Data Explorer -->
+            <div class="project-card">
+                <div>
+                    <h3 class="project-title">Simple Data Explorer</h3>
+                    <p class="project-tech">Python | React | Docker</p>
+                    <p class="project-desc">
+                        Developed a full-stack data viewing application that efficiently handles large datasets with server-side sorting, pagination, and filtering. Containerized the entire application using Docker to ensure it can be easily installed and run on any machine with a single command.
+                    </p>
+                </div>
+                <a href="https://github.com/9tyNight/simple-data-explorer" target="_blank" class="project-link">
                     <span>&#128279; View on GitHub</span>
                 </a>
             </div>
@@ -469,29 +544,39 @@
     </section>
 
     <section id="education" class="hidden">
-        <h2 class="section-title">04. Education</h2>
+        <h2 class="section-title">05. Education</h2>
         <div class="timeline">
+            <!-- Bachelor's Degree -->
             <div class="timeline-item">
-                <div class="timeline-date">Jan 2024 - Present</div>
+                <div class="timeline-date">Graduated</div>
                 <h3 class="timeline-title">Bachelor of Software Engineering (Honours)</h3>
-                <p class="timeline-org">Sunway University, Malaysia</p>
+                <p class="timeline-org">Sunway University, Subang Jaya, Malaysia</p>
                 <p style="font-size: 0.9rem; margin-top: 5px; color: var(--text-muted);">
                     Data Structures, OOP, Databases, Computer Networks, Web Programming.
                     <br><em>Member of Programming Club (Weekly coding challenges).</em>
                 </p>
             </div>
+
+            <!-- Foundation -->
             <div class="timeline-item">
                 <div class="timeline-date">Completed Sept 2022</div>
                 <h3 class="timeline-title">Foundation in Information Technology</h3>
-                <p class="timeline-org">Management & Science University (MSU)</p>
+                <p class="timeline-org">Management & Science University (MSU), Shah Alam</p>
+            </div>
+
+            <!-- IGCSE -->
+            <div class="timeline-item">
+                <div class="timeline-date">Completed June 2021</div>
+                <h3 class="timeline-title">IGCSE</h3>
+                <p class="timeline-org">REAL International School, Shah Alam</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="hidden">
-        <h2 class="section-title">05. Get In Touch</h2>
+        <h2 class="section-title">06. Get In Touch</h2>
         <div class="contact-content">
-            <p>I am currently looking for internship opportunities starting January 2026. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <p>I am currently looking for full-time software engineering opportunities. Whether you have a question, an open role, or just want to say hi, I'll try my best to get back to you!</p>
             <div class="contact-info">
                 <a href="mailto:ziadanka2003@gmail.com" class="contact-btn">Email Me</a>
                 <a href="https://www.linkedin.com/in/zia-danka" target="_blank" class="contact-btn">LinkedIn</a>
@@ -555,7 +640,7 @@
 
         function type() {
             const currentPhrase = phrases[phraseIndex];
-            
+
             if (isDeleting) {
                 textElement.textContent = currentPhrase.substring(0, charIndex - 1);
                 charIndex--;
