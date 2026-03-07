@@ -409,6 +409,8 @@
     <section id="skills" class="hidden">
         <h2 class="section-title">02. Technical Skills</h2>
         <div class="skills-grid">
+            <div class="skill-item">Machine Learning</div>
+            <div class="skill-item">Pandas / Scikit-Learn</div>
             <div class="skill-item">React / Next.js</div>
             <div class="skill-item">Python / FastAPI</div>
             <div class="skill-item">Java</div>
@@ -442,7 +444,35 @@
         <h2 class="section-title">04. Featured Projects</h2>
         <div class="projects-container">
 
-            <!-- Project 1: Roguelike Game -->
+            <!-- New Project 1: Machine Learning -->
+            <div class="project-card">
+                <div>
+                    <h3 class="project-title">Hardware Performance Predictor</h3>
+                    <p class="project-tech">Python | Scikit-Learn | Pandas</p>
+                    <p class="project-desc">
+                        Built a machine learning pipeline to analyze hardware configurations. Trained a K-Means clustering model to group performance data, and implemented a Decision Tree classifier to predict estimated metrics.
+                    </p>
+                </div>
+                <a href="https://github.com/9tyNight/ML-Performance-Predictor" target="_blank" class="project-link">
+                    <span>&#128279; View on GitHub</span>
+                </a>
+            </div>
+
+            <!-- New Project 2: AI Pathfinding -->
+            <div class="project-card">
+                <div>
+                    <h3 class="project-title">AI Pathfinding Agent</h3>
+                    <p class="project-tech">Python | A* Search | Matplotlib</p>
+                    <p class="project-desc">
+                        Built an AI agent that uses the A* search algorithm to calculate the most efficient route for collecting items across a complex grid. Designed custom logic to manage constraints with an animated visualization.
+                    </p>
+                </div>
+                <a href="https://github.com/9tyNight/Kiwiberry-AI-Search" target="_blank" class="project-link">
+                    <span>&#128279; View on GitHub</span>
+                </a>
+            </div>
+
+            <!-- Project 3: Roguelike Game -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">Roguelike Game</h3>
@@ -456,7 +486,7 @@
                 </a>
             </div>
 
-            <!-- Project 2: GeoQuiz App -->
+            <!-- Project 4: GeoQuiz App -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">GeoQuiz App</h3>
@@ -470,7 +500,7 @@
                 </a>
             </div>
 
-            <!-- Project 3: Ecommerce Website -->
+            <!-- Project 5: Ecommerce Website -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">Ecommerce Website</h3>
@@ -484,7 +514,7 @@
                 </a>
             </div>
 
-            <!-- Project 4: Reservation System -->
+            <!-- Project 6: Reservation System -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">Reservation System</h3>
@@ -498,7 +528,7 @@
                 </a>
             </div>
 
-            <!-- Project 5: Admin Dashboard -->
+            <!-- Project 7: Admin Dashboard -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">Admin Dashboard</h3>
@@ -512,7 +542,7 @@
                 </a>
             </div>
 
-            <!-- Project 6: SimpleStock -->
+            <!-- Project 8: SimpleStock -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">SimpleStock Inventory</h3>
@@ -526,7 +556,7 @@
                 </a>
             </div>
 
-            <!-- Project 7: Simple Data Explorer -->
+            <!-- Project 9: Simple Data Explorer -->
             <div class="project-card">
                 <div>
                     <h3 class="project-title">Simple Data Explorer</h3>
@@ -633,7 +663,7 @@
 
         // --- 2. TYPEWRITER EFFECT ---
         const textElement = document.getElementById('typewriter');
-        const phrases = ["Robust Backends", "Android Applications", "Scalable Web Systems", "Software Solutions"];
+        const phrases = ["Robust Backends", "Android Applications", "Scalable Web Systems", "Software Solutions", "AI & Machine Learning"];
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
